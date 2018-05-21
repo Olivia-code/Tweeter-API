@@ -5,7 +5,7 @@ const  morgan = require('morgan');
 const  bodyParser = require('body-parser');
 const  methodOverride = require('method-override');
 const  routes = require('./api/routes');
-
+//const port = process.env.PORT;
 // Configuration ===============================================================
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public')); 		
