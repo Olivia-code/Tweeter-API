@@ -1,0 +1,20 @@
+{
+  "name": "stackcommerce-codechallenge-master",
+  "version": "1.0.0",
+  "description": "This challenge involved building an app that consumed the Twitter API to display the time & content of the last 25 Tweets for any given Twitter handle. Demo the app - [here](https://stackcommerce-frontend.herokuapp.com).",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Olivia",
+  "license": "ISC",
+  "dependencies": {
+    "angular-sanitize": "^1.7.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "twitter-node-client": "0.0.6"
+  }
+}
