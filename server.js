@@ -1,10 +1,10 @@
 // set up ======================================================================
-var express = require('express');
-var app = express(); 						// create our app w/ express
-var morgan = require('morgan');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
-var routes = require('./api/routes');
+const express = require('express');
+const  app = express(); 						// create our app w/ express
+const  morgan = require('morgan');
+const  bodyParser = require('body-parser');
+const  methodOverride = require('method-override');
+const  routes = require('./api/routes');
 
 // Configuration ===============================================================
 app.set('port', (process.env.PORT || 5000));

@@ -1,14 +1,14 @@
-var Twitter = require('twitter-node-client').Twitter;
-var config = require('../config');
+const Twitter = require('twitter-node-client').Twitter;
+const  config = require('../config');
 
 //Callback functions
-var error = function (err, response, body) {
+const  error = function (err, response, body) {
     if(err){
     	console.log("Error: " + JSON.stringify(err));
     }
 };
 
-var twitter_config = {
+const  twitter_config = {
     "consumerKey": 'nqo3HpNeTwJsOQ9dxwTqHTEu0',  // config.consumer_key,
     "consumerSecret": '82th6VzpjNrb2k2d7w3s0hmWrER9jkSDFbzdEWmtmKzsHRCxmC', //config.consumer_secret,
     "accessToken":  '998012123933429760-irc1lyri9SwiZ6GFeLMBEavuUqs4imE',//config.access_token,
@@ -16,7 +16,7 @@ var twitter_config = {
     "callBackUrl": config.callback_url
 }
 
-var twitter = new Twitter(twitter_config);
+const twitter = new Twitter(twitter_config);
 
 module.exports = {
 	getTimeline : function (req, res){
